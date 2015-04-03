@@ -1,8 +1,7 @@
 require 'usuallynote'
 require 'pry'
-
+require 'webmock/rspec'
 # Dir['./spec/support/**/*.rb'].each { |f| require f }
-
 RSpec.configure do |config|
   # http://robots.thoughtbot.com/how-to-stub-external-services-in-tests
  # config.before(:each) do
