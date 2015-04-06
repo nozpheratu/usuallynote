@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/edam/user
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwABAAAAY1M9czE6VT05MDdj
+        MDpFPTE1MzU5MzkwOTdjOkM9MTRjMDE4N2RiNTg6UD0xY2Q6QT1lbi1kZXZ0
+        b2tlbjpWPTI6SD02ODJlZTA5MmVlY2RkZWYyNGVjMGE2ODk1NDE3NDBkYwA=
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - evernote-thrift gem / 1.25.1; Ruby / 2.1.3;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '82'
+      Date:
+      - Sat, 04 Apr 2015 20:54:33 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA9nZXROb3RlU3RvcmVVcmwAAAAACwAAAAAAL2h0dHBzOi8vc2Fu
+        ZGJveC5ldmVybm90ZS5jb20vc2hhcmQvczEvbm90ZXN0b3JlAA==
+    http_version: 
+  recorded_at: Sat, 04 Apr 2015 20:54:34 GMT
+recorded_with: VCR 2.9.3

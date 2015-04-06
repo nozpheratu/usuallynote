@@ -1,5 +1,3 @@
-require 'evernote-thrift'
-
 module UsuallyNote
   class Connection
     attr_accessor :notestore, :auth_token
