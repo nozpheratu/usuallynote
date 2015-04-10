@@ -1,0 +1,193 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA1saXN0Tm90ZWJvb2tzAAAAAAsAAQAAAGNTPXMxOlU9OTA3YzA6
+        RT0xNTM1OTM5MDk3YzpDPTE0YzAxODdkYjU4OlA9MWNkOkE9ZW4tZGV2dG9r
+        ZW46Vj0yOkg9NjgyZWUwOTJlZWNkZGVmMjRlYzBhNjg5NTQxNzQwZGMA
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - evernote-thrift gem / 1.25.1; Ruby / 2.1.2;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '237'
+      Date:
+      - Fri, 10 Apr 2015 02:54:38 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA1saXN0Tm90ZWJvb2tzAAAAAA8AAAwAAAACCwABAAAAJDgxOWJh
+        ODY3LWY5MmItNGM2Zi04YjIxLWNkM2RiZjA2NDM2NQsAAgAAAAR0ZXN0CAAF
+        AAAAFgIABgEKAAcAAAFMi8UjmAoACAAAAUyLxSOYDAARAgAGAQIAFQEAAAsA
+        AQAAACQxNjkzM2VkYi1iNWE0LTRhYzQtOWYwOC00OTllNjFlMTI4ZTELAAIA
+        AAAHTXkgTm90ZQgABQAAABkCAAYACgAHAAABTKFAJbAKAAgAAAFMoUAlsAwA
+        EQIABgECABUBAAAA
+    http_version: 
+  recorded_at: Fri, 10 Apr 2015 02:54:39 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA1saXN0Tm90ZWJvb2tzAAAAAAsAAQAAAGNTPXMxOlU9OTA3YzA6
+        RT0xNTM1OTM5MDk3YzpDPTE0YzAxODdkYjU4OlA9MWNkOkE9ZW4tZGV2dG9r
+        ZW46Vj0yOkg9NjgyZWUwOTJlZWNkZGVmMjRlYzBhNjg5NTQxNzQwZGMA
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - evernote-thrift gem / 1.25.1; Ruby / 2.1.2;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '237'
+      Date:
+      - Fri, 10 Apr 2015 02:54:40 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA1saXN0Tm90ZWJvb2tzAAAAAA8AAAwAAAACCwABAAAAJDgxOWJh
+        ODY3LWY5MmItNGM2Zi04YjIxLWNkM2RiZjA2NDM2NQsAAgAAAAR0ZXN0CAAF
+        AAAAFgIABgEKAAcAAAFMi8UjmAoACAAAAUyLxSOYDAARAgAGAQIAFQEAAAsA
+        AQAAACQxNjkzM2VkYi1iNWE0LTRhYzQtOWYwOC00OTllNjFlMTI4ZTELAAIA
+        AAAHTXkgTm90ZQgABQAAABkCAAYACgAHAAABTKFAJbAKAAgAAAFMoUAlsAwA
+        EQIABgECABUBAAAA
+    http_version: 
+  recorded_at: Fri, 10 Apr 2015 02:54:40 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA51cGRhdGVOb3RlYm9vawAAAAALAAEAAABjUz1zMTpVPTkwN2Mw
+        OkU9MTUzNTkzOTA5N2M6Qz0xNGMwMTg3ZGI1ODpQPTFjZDpBPWVuLWRldnRv
+        a2VuOlY9MjpIPTY4MmVlMDkyZWVjZGRlZjI0ZWMwYTY4OTU0MTc0MGRjDAAC
+        CwABAAAAJDgxOWJhODY3LWY5MmItNGM2Zi04YjIxLWNkM2RiZjA2NDM2NQsA
+        AgAAABZVcGRhdGVkIE5vdGVib29rIE5hbWUhCAAFAAAAFgIABgEKAAcAAAFM
+        i8UjmAoACAAAAUyLxSOYDAARAgAGAQAAAA==
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - evernote-thrift gem / 1.25.1; Ruby / 2.1.2;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '34'
+      Date:
+      - Fri, 10 Apr 2015 02:54:40 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA51cGRhdGVOb3RlYm9vawAAAAAIAAAAAAAaAA==
+    http_version: 
+  recorded_at: Fri, 10 Apr 2015 02:54:40 GMT
+- request:
+    method: post
+    uri: https://sandbox.evernote.com/shard/s1/notestore
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAQAAAA1saXN0Tm90ZWJvb2tzAAAAAAsAAQAAAGNTPXMxOlU9OTA3YzA6
+        RT0xNTM1OTM5MDk3YzpDPTE0YzAxODdkYjU4OlA9MWNkOkE9ZW4tZGV2dG9r
+        ZW46Vj0yOkg9NjgyZWUwOTJlZWNkZGVmMjRlYzBhNjg5NTQxNzQwZGMA
+    headers:
+      Content-Type:
+      - application/x-thrift
+      User-Agent:
+      - evernote-thrift gem / 1.25.1; Ruby / 2.1.2;
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Strict-Transport-Security:
+      - max-age=31536000
+      X-Frame-Options:
+      - SAMEORIGIN
+      Cache-Control:
+      - no-transform
+      Content-Type:
+      - application/x-thrift
+      Content-Length:
+      - '255'
+      Date:
+      - Fri, 10 Apr 2015 02:54:41 GMT
+      Server:
+      - Evernote/1.0
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        gAEAAgAAAA1saXN0Tm90ZWJvb2tzAAAAAA8AAAwAAAACCwABAAAAJDgxOWJh
+        ODY3LWY5MmItNGM2Zi04YjIxLWNkM2RiZjA2NDM2NQsAAgAAABZVcGRhdGVk
+        IE5vdGVib29rIE5hbWUhCAAFAAAAGgIABgEKAAcAAAFMi8UjmAoACAAAAUyh
+        QC2ADAARAgAGAQIAFQEAAAsAAQAAACQxNjkzM2VkYi1iNWE0LTRhYzQtOWYw
+        OC00OTllNjFlMTI4ZTELAAIAAAAHTXkgTm90ZQgABQAAABkCAAYACgAHAAAB
+        TKFAJbAKAAgAAAFMoUAlsAwAEQIABgECABUBAAAA
+    http_version: 
+  recorded_at: Fri, 10 Apr 2015 02:54:41 GMT
+recorded_with: VCR 2.9.3

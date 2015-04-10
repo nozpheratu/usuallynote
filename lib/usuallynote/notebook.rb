@@ -7,10 +7,18 @@ module UsuallyNote
     def initialize(edam_object)
       @edam_object = edam_object
     end
-    
+
+    def update
+      auth_token = UsuallyNote.connection.auth_token
+      UsuallyNote.note_store.updateNotebook(auth_token, self.edam_object)
+    end
+
     class << self
       def all
-        UsuallyNote.connection.notestore.listNotebooks(UsuallyNote.connection.auth_token)
+        auth_token = UsuallyNote.connection.auth_token
+        UsuallyNote.note_store.listNotebooks(auth_token).map do |edam_object|
+          new(edam_object)
+        end
       end
 
       def create(name:)
