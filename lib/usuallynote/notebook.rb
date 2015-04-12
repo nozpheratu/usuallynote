@@ -13,6 +13,11 @@ module UsuallyNote
       UsuallyNote.note_store.updateNotebook(auth_token, self.edam_object)
     end
 
+    def delete
+      auth_token = UsuallyNote.connection.auth_token
+      UsuallyNote.note_store.expungeNotebook(auth_token, self.edam_object.guid)
+    end
+
     class << self
       def all
         auth_token = UsuallyNote.connection.auth_token

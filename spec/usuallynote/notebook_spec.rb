@@ -36,4 +36,13 @@ describe UsuallyNote::Notebook do
       end
     end
   end
+
+  describe '.delete' do
+    it 'deletes itself' do
+      VCR.use_cassette('notebook_delete') do
+        notebook = UsuallyNote::Notebook.all.first
+        expect{notebook.delete}.to change{UsuallyNote::Notebook.all.size}
+      end
+    end
+  end
 end
