@@ -1,21 +1,24 @@
 module UsuallyNote
+  # A simple utility class for wrapping Evernote Notebook API
   class Notebook
     extend UsuallyNote::EDAMDelegatable
 
-    delegate_to_edam :name
     attr_reader :edam_object
+
+    delegate_to_edam :name
+
     def initialize(edam_object)
       @edam_object = edam_object
     end
 
     def update
       auth_token = UsuallyNote.connection.auth_token
-      UsuallyNote.note_store.updateNotebook(auth_token, self.edam_object)
+      UsuallyNote.note_store.updateNotebook(auth_token, edam_object)
     end
 
     def delete
       auth_token = UsuallyNote.connection.auth_token
-      UsuallyNote.note_store.expungeNotebook(auth_token, self.edam_object.guid)
+      UsuallyNote.note_store.expungeNotebook(auth_token, edam_object.guid)
     end
 
     class << self
