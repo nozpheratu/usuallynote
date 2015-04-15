@@ -11,6 +11,10 @@ module UsuallyNote
       @edam_object = edam_object
     end
 
+    def note_meta_data
+      @note_meta_data ||= fetch_note_meta_data
+    end
+
     def update
       auth_token = UsuallyNote.connection.auth_token
       UsuallyNote.note_store.updateNotebook(auth_token, edam_object)
@@ -19,6 +23,19 @@ module UsuallyNote
     def delete
       auth_token = UsuallyNote.connection.auth_token
       UsuallyNote.note_store.expungeNotebook(auth_token, edam_object.guid)
+    end
+
+    private
+
+    def fetch_note_meta_data
+      auth_token = UsuallyNote.connection.auth_token
+      filter = Evernote::EDAM::NoteStore::NoteFilter.new
+      filter.notebookGuid = edam_object.guid
+      offset = 0 # pagination
+      max_notes = 100
+      result_spec = Evernote::EDAM::NoteStore::NotesMetadataResultSpec.new
+      result_spec.includeTitle = true
+      results = UsuallyNote.note_store.findNotesMetadata(auth_token, filter, offset, max_notes, result_spec)
     end
 
     class << self

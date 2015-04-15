@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe UsuallyNote::Notebook do
   describe '.all' do
-    subject(:all) { UsuallyNote::Notebook.all } 
+    subject(:all) { UsuallyNote::Notebook.all }
 
     it 'returns UsuallyNote::Notebook collection' do
       VCR.use_cassette("notestore") do
@@ -27,7 +27,18 @@ describe UsuallyNote::Notebook do
     end
   end
 
-  describe '.update' do
+  describe '#notes' do
+    it 'returns note meta data' do
+      VCR.use_cassette('notebook_note_meta_data') do
+        notebook = UsuallyNote::Notebook.all.first
+        expect(notebook.note_meta_data).to be_a(
+          Evernote::EDAM::NoteStore::NotesMetadataList
+        )
+      end
+    end
+  end
+
+  describe '#update' do
     it 'updates values' do
       VCR.use_cassette('notestore_update') do
         notebook = UsuallyNote::Notebook.all.first
@@ -37,7 +48,7 @@ describe UsuallyNote::Notebook do
     end
   end
 
-  describe '.delete' do
+  describe '#delete' do
     it 'deletes itself' do
       VCR.use_cassette('notebook_delete') do
         notebook = UsuallyNote::Notebook.all.first
