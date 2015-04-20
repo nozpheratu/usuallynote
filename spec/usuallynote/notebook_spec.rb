@@ -19,7 +19,7 @@ describe UsuallyNote::Notebook do
 
   describe '.create' do
     it 'returns a UsuallyNote::Notebook instance' do
-      VCR.use_cassette('notestore_create') do
+      VCR.use_cassette('notebook_create') do
         notebook = UsuallyNote::Notebook.create(name: 'My Note')
         expect(notebook).to be_a(UsuallyNote::Notebook)
         expect(notebook.name).to eq('My Note')
@@ -40,9 +40,9 @@ describe UsuallyNote::Notebook do
 
   describe '#update' do
     it 'updates values' do
-      VCR.use_cassette('notestore_update') do
+      VCR.use_cassette('notebook_update') do
         notebook = UsuallyNote::Notebook.all.first
-        notebook.name = 'Updated Notebook Name!'
+        notebook.name = 'Updated Notebook Name'
         expect{notebook.update}.to change{UsuallyNote::Notebook.all.first.name}
       end
     end

@@ -35,7 +35,9 @@ module UsuallyNote
       max_notes = 100
       result_spec = Evernote::EDAM::NoteStore::NotesMetadataResultSpec.new
       result_spec.includeTitle = true
-      results = UsuallyNote.note_store.findNotesMetadata(auth_token, filter, offset, max_notes, result_spec)
+      UsuallyNote.note_store.findNotesMetadata(
+        auth_token, filter, offset, max_notes, result_spec
+      )
     end
 
     class << self
